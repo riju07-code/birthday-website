@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #one {
+      padding: 20px;
+      background-color: #ffe0e0;
+      color: #444;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: sans-serif;
+      width: fit-content;
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="one">I love you (if you like me, touch it)!</div>
+
+  <script>
+    function stop() {
+      let name = prompt("What's your name?");
+      if (name) {
+        alert(`Aww, ${name}, I love you too 💖`);
+        // Here you could send the name to a backend or show it on the page
+        console.log(`${name} clicked and loves you!`);
+      } else {
+        alert("You didn't tell me your name!");
+      }
+    }
+
+    document.getElementById("one").addEventListener("click", stop);
+  </script>
+
+</body>
+</html>
